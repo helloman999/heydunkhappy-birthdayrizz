@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Fucking Birthday</title>
+  <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./index.css">
+  <link rel="stylesheet" href="./normalize.css">
+
+</head>
+<body>
+  <!-- <audio src="./audio/song.m4a" autoplay></audio> -->
+
+  <div class="page">
+    <video class="pic" autoplay loop controls>
+      <source src="./images/FinalVideo_1629849912.382356.mp4"  type="video/mp4">
+     </video>
+    <img class="button" src="./images/like.png">
+    <img class="message hidden" src="./images/IMG_2577.GIF">
+    <h1 class="title-one"><span>HAPPYBIRTHDAY</span></h1>
+    <h1 class="title"><span>HAPPYBIRTHDAY</span></h1>
+    <h1 class="title-two"><span>HAPPYBIRTHDAY</span></h1>
+
+
+
+
+  </div>
+  <script type="text/javascript">
+    console.log(document.querySelector('.button'))
+    function eventHandler() {
+      const message = document.querySelector('.message');
+      message.classList.toggle('hidden');
+    }
+    document.querySelector('.button').addEventListener('click', eventHandler);
+  </script>
+</body>
+</html>
